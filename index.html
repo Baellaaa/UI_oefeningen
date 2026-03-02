@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <h1>Bijna eind van de dag</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut possimus minima nemo corporis 
+        necessitatibus incidunt temporibus velit et reiciendis minus, consequuntur tenetur hic inventore aspernatur fuga, 
+        at veritatis. Vero, eveniet!</p>
+    <div id="lorem"></div>
+    <!-- <script>
+        
+        let name = "Tim";
+        let leeftijd = prompt("Hoe oud ben je?");
+        
+        const teacher = "Stephan"; /** constante waarden die vast staan **/
+        let age = 2026 - 1976 /** als je onzeker bent over een waarde = let **/
+
+        let DtD = new Date();
+
+        alert(teacher + " " + age + " " + DtD);
+
+        console.log(name); /** bij Inspect -> console zie je de log  **/
+    </script> -->
+    <!-- <script>
+        let name = prompt("Hoe heet je?");
+        let age = prompt("Hoe oud ben je?");
+
+        console.log(name);
+        console.log(age);
+        console.log(name + " (" + age + ")")
+
+        if (age <= 17) {
+            alert("Je bent te jong");
+        }
+        else {
+            alert("Je bent oud genoeg!")
+        }
+            
+
+    </script> -->
+    <!-- <script> -->
+        <!-- /** Ijsco man die ijs verkoopt  **/
+        let ijsbol = prompt("Wil je 1, 2 of 3 bolletjes ijs?");
+        let ongeldig = "Dat verkopen wij helaas niet" 
+        // if (ijsbol >3); {
+        //     alert("Dat verkoop ik helaas niet");
+        // }
+        // ifelse (ijsbol <= 0);{
+        //     alert("Als je geen zin hebt, kom een andere keer terug!")
+        // }
+        // ifelse ((ijsbol ==1) (ijsbol == 2) (ijsbol == 3)); {
+        //     alert("Geniet van je " + ijsbol + "bolletjes")
+        // }
+
+
+        // if ((ijsbol == 1)) {
+        //     alert("Je wil " + ijsbol + " bolletje ijs, geniet ervan!")
+        // }
+        // elseif ((ijsbol == 2)); {
+        //     alert("Je wil " + ijsbol + " bolletjes ijs, geniet ervan!")
+        // }
+        // elseif ((ijsbol == 3)); {
+        //     alert("Je wil " + ijsbol + " bolletjes ijs, geniet ervan!")
+        // } -->
+       
+    <!--  </script> -->
+
+    <script>
+        let myText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut possimus minima nemo corporis necessitatibus incidunt temporibus velit et reiciendis minus, consequuntur tenetur hic inventore aspernatur fuga, at veritatis. Vero, eveniet!";
+        let myArray = [myText.split(" ")];
+        let arrayLength = myArray.length;
+        // alert(`${myArray[2]} het werkt niet man`);
+        // alert(myArray[0] + " " + myArray[1]);
+        document.getElementById("lorem").textContent = myArray[0];
+        alert(arrayLength);
+
+        for (i = 0; i<= myArray.length; i++) {
+            document.getElementById("lorem").innerHTML += myArray[i] + "<br/>";
+        }
+    </script>
 </body>
 </html>
